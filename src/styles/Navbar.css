@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: 120px;
+  height: 5rem;
   background: #0b10d4;
   display: flex;
   justify-content: right;
@@ -40,7 +40,8 @@ p {
 }
 
 .menu button {
-  margin-right: 20px;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
   background-color: transparent;
   border: none;
   color: white;
@@ -51,16 +52,10 @@ p {
   height: 100vh;
 }
 
-#open .links {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 100px;
-}
-
-#open a {
+/* #open a {
   width: 100%;
   text-align: center;
-}
+} */
 
 /* @media only screen and (max-width: 900px) {
   .navbar a {
@@ -70,21 +65,24 @@ p {
 
 @media only screen and (max-width: 600px) {
   .menu {
+    margin-top: 10px;
     display: flex;
   }
-
-  /* #close a {
-    display: none;
-  } */
 
   #close .links {
     display: none;
   }
 
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  #open .links {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 6rem;
+  }
+
+  .navbar {
+    height: 5rem;
+    background: #0b10d4;
+    display: inline-block;
   }
 }
 
@@ -93,12 +91,8 @@ p {
     display: none;
   }
 
-  /* .hiddenlinks {
-    display: none;
-  } */
-
   #open {
-    height: 100px;
+    height: 5rem;
   }
 
   #open .links {
