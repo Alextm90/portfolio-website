@@ -1,13 +1,23 @@
-import React from 'react'
-import "../styles/Navbar.css"
+import React from "react";
+import "../styles/Navbar.css";
+import { useState } from "react";
+import ReorderIcon from "@mui/icons-material/Reorder";
+import { Link } from "react-scroll";
 
 function Navbar() {
+
+  const handleClick = () => {
+    setNavbar((prev) => !prev);
+  };
+
+  const [navbar, setNavbar] = useState(false);
   return (
-    <div className="navbar">
+    <div className="navbar" id={navbar ? "open" : "close"}>
       <div className="menu">
-        <button></button>
+        <button onClick={handleClick}>
+          <ReorderIcon />
+        </button>
       </div>
-      <p>Alex Miserandino</p>
       <div className="links">
         <a href="Skills">Skills</a>
         <a href="Projects">Projects</a>
@@ -18,4 +28,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;
