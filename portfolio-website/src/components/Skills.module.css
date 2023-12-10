@@ -1,0 +1,28 @@
+
+.skillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: center;
+}
+
+h4 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: .5rem 0.5rem 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+h4 {
+  margin-top: 0.9rem;
+  color: white;
+  font-weight: 200;
+}
