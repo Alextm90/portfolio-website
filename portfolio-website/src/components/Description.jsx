@@ -12,7 +12,6 @@ const Description = ({ description, title, arr }) => {
           <h2>{title}</h2>
           <div id={styles.techContainer}>
             {arr?.map((el) => {
-              console.log(el, "el");
               return (
                 <span className={styles.languages} key={el}>
                   {el}
