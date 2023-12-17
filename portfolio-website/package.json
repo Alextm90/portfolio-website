@@ -17,7 +17,9 @@
     "devicons-react": "^1.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scroll-parallax": "^3.4.5"
+    "react-full-screen": "^1.1.1",
+    "react-scroll-parallax": "^3.4.5",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
