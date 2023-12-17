@@ -1,7 +1,7 @@
 import styles from "./projects.module.css";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
-import Description from "./Description";
+import Description from "./description";
 import textObject from "./text";
 
 const Projects = () => {
