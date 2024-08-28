@@ -20,17 +20,6 @@
   color: white;
 }
 
-a {
-  color: white;
-  padding: 1rem;
-  text-decoration: none;
-}
-
-p {
-  width: 15rem;
-  color: white;
-  padding: 1rem;
-}
 
 .menu {
   width: 100%;
@@ -50,6 +39,12 @@ p {
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.navLinks {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 ul {

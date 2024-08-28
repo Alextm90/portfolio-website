@@ -48,6 +48,10 @@
   margin-bottom: 1rem;
 }
 
+#certWrapper {
+  margin-bottom: 10.5rem;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 700px) and (min-width: 530px) {
@@ -83,6 +87,10 @@
   }
     .closeBtn {
     bottom: 12.35rem;
+  }
+
+  #certWrapper {
+    margin-bottom: 4rem;
   }
 }
 
