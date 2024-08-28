@@ -1,11 +1,11 @@
-import styles from "./Certificates.module.css";
-import certificateOne from "../assets/certificateOne.png";
-import certificateTwo from "../assets/certificateTwo.png";
-import certificateThree from "../assets/certificateThree.png";
-import certificateFour from "../assets/certificateFour.png";
-import certificateFive from "../assets/certificateFive.png";
-import Popup from "reactjs-popup";
-import CloseIcon from "@mui/icons-material/Close";
+import styles from './Certificates.module.css';
+import certificateOne from '../assets/certificateOne.png';
+import certificateTwo from '../assets/certificateTwo.png';
+import certificateThree from '../assets/certificateThree.png';
+import certificateFour from '../assets/certificateFour.png';
+import certificateFive from '../assets/certificateFive.png';
+import Popup from 'reactjs-popup';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Certificates = () => {
   const arr = [
@@ -17,7 +17,8 @@ const Certificates = () => {
   ];
 
   const certificateComponents = arr?.map((cert) => {
-    return <Popup
+    return (
+      <Popup
         key={cert}
         trigger={
           <button className={styles.certBtn}>
@@ -38,21 +39,24 @@ const Certificates = () => {
           </div>
         )}
       </Popup>
+    );
   });
 
   return (
-    <section id={styles.certWrapper} >
-      <h1 id={styles.header}>Certificates</h1>
-      <div id={styles.certContainerOne}>
-        {certificateComponents[0]}
-        {certificateComponents[1]}
-        {certificateComponents[2]}
-      </div>
-      <div id={styles.certContainerTwo}>
-        {certificateComponents[3]}
-        {certificateComponents[4]}
-      </div>
-    </section>
+    <div id="certificates">
+      <section id={styles.certWrapper}>
+        <h1 id={styles.header}>Certificates</h1>
+        <div id={styles.certContainerOne}>
+          {certificateComponents[0]}
+          {certificateComponents[1]}
+          {certificateComponents[2]}
+        </div>
+        <div id={styles.certContainerTwo}>
+          {certificateComponents[3]}
+          {certificateComponents[4]}
+        </div>
+      </section>
+    </div>
   );
 };
 
