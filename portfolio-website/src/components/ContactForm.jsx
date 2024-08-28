@@ -16,86 +16,81 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <h1 id='contact'>Contact</h1>
-      <div className={styles.formContainer}>
-        <h3 className={styles.formHeading}>Get in touch</h3>
-        <form onSubmit={handleFormSubmit} ref={formRef}>
-          <div className={styles.formGroup}>
-            <label htmlFor="first-name" className={styles.label}>
-              First Name
-            </label>
-            <input
-              id="first-name"
-              type="text"
-              name="first-name"
-              required
-              className={styles.input}
-            />
-          </div>
-
-          <div className={styles.formGroup}>
-            <label htmlFor="last-name" className={styles.label}>
-              Last Name
-            </label>
-            <input
-              id="last-name"
-              type="text"
-              name="last-name"
-              required
-              className={styles.input}
-            />
-          </div>
-
-          <div className={styles.formGroup}>
-            <label htmlFor="email" className={styles.label}>
-              Email Address
-            </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              className={styles.input}
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-          </div>
-
-          <div className={styles.formGroup}>
-            <label htmlFor="message" className={styles.label}>
-              Your Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              className={styles.textarea}
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-          </div>
-
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className={styles.submitButton}
-          >
-            Submit
-          </button>
-        </form>
-
-        {state.succeeded && (
-          <p className={styles.successMessage}>Thanks for your message!</p>
-        )}
+<section>
+  <h1 id="contact">Contact</h1>
+  <div className={styles.formContainer}>
+    {state.succeeded && (
+      <p className={styles.successMessage}>Thanks for your message!</p>
+    )}
+    <form onSubmit={handleFormSubmit} ref={formRef}>
+      <div className={styles.formGroup}>
+        <label htmlFor="first-name" className={styles.label}>
+          First Name
+        </label>
+        <input
+          id="first-name"
+          type="text"
+          name="first-name"
+          required
+          className={styles.input}
+        />
       </div>
-    </section>
+      <div className={styles.formGroup}>
+        <label htmlFor="last-name" className={styles.label}>
+          Last Name
+        </label>
+        <input
+          id="last-name"
+          type="text"
+          name="last-name"
+          required
+          className={styles.input}
+        />
+      </div>
+      <div className={styles.formGroup}>
+        <label htmlFor="email" className={styles.label}>
+          Email Address
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          className={styles.input}
+        />
+        <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+        />
+      </div>
+      <div className={styles.formGroup}>
+        <label htmlFor="message" className={styles.label}>
+          Your Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          className={styles.textarea}
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+      </div>
+      <button
+        type="submit"
+        disabled={state.submitting}
+        className={styles.submitButton}
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
+
   );
 }
 
