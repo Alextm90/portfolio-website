@@ -8,7 +8,12 @@ const PortfolioHeader = () => {
         <h1 id={styles.firstName}>Alex</h1>
         <h1 id={styles.lastName}>Miserandino</h1>
         <h2 id={styles.title}>Junior Developer</h2>
-        <a href="#" id={styles.resumeLink}>
+        <a
+          href="https://drive.google.com/file/d/1DcEvU2qOozLj3SEX3ovQxdTbFjXINECQ/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          id={styles.resumeLink}
+        >
           Resume
         </a>
       </div>
