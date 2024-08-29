@@ -11,7 +11,7 @@ h2 {
 
 .languages {
   color: white;
-  font-size: .875rem;
+  font-size: 0.875rem;
   border: 1px solid white;
   padding: 0.01rem 0.4rem 0.1rem 0.4rem;
   margin-right: 0.5rem;
@@ -21,7 +21,7 @@ h2 {
 #description {
   margin-top: -0.4rem;
   font-size: 16px;
-  width: 85%;
+  width: 92%;
 }
 
 .innerContainer h2 {
@@ -36,19 +36,20 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1.2rem; 
+  padding: 0.5rem 1.2rem;
   text-decoration: none;
   color: white;
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  width: 120px; 
+  width: 120px;
   height: 40px;
   white-space: nowrap;
 }
 
-.lnkText, .eyeLnkText {
-  margin-left: 0.3rem; 
+.lnkText,
+.eyeLnkText {
+  margin-left: 0.3rem;
   position: relative;
   bottom: 0.05rem;
   display: flex;
@@ -56,7 +57,8 @@ h2 {
   font-size: 14px;
 }
 
-.lnkIcon, .eyeLnkIcon {
+.lnkIcon,
+.eyeLnkIcon {
   position: relative;
   top: 0;
   display: flex;
@@ -72,9 +74,9 @@ h2 {
 .lnkContainer {
   width: 12rem;
   display: flex;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
   justify-content: center;
-  margin-left: 4rem;
+  margin-left: 5rem;
 }
 
 .projectContainer {
@@ -94,7 +96,7 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.33); 
+  background-color: rgba(255, 255, 255, 0.33);
   z-index: 1;
 }
 
@@ -114,5 +116,11 @@ h2 {
 .innerContainer {
   background-color: rgba(0, 0, 0, 0.8);
   padding-top: 0.5rem;
-  width: 20rem;
+  width: 22rem;
+}
+
+@media (max-width: 500px) {
+  .innerContainer {
+    margin-left: -0.25rem;
+  }
 }
