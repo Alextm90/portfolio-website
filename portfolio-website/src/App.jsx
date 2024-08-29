@@ -1,6 +1,6 @@
 import './App.css';
 import About from './components/About';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Skills from './components/skills';
 import Projects from './components/projects';
 import { ParallaxProvider } from 'react-scroll-parallax';
