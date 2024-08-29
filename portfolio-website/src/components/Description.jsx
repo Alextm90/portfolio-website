@@ -1,7 +1,7 @@
 import { GithubOriginal } from 'devicons-react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Parallax } from 'react-scroll-parallax';
-import styles from './projects.module.css';
+import styles from './Projects.module.css';
 
 const ViewAppLink = ({ webLnk }) => {
   return (

@@ -1,4 +1,4 @@
-import styles from './projects.module.css';
+import styles from './Projects.module.css';
 import project1 from '../assets/project1.png';
 import project12 from '../assets/project12.png';
 import project8 from '../assets/project8.png';
