@@ -7,6 +7,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Certificates from './components/Certificates';
 import ContactForm from './components/ContactForm';
 import PortfolioHeader from './components/PortfolioHeader';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Certificates></Certificates>
         <About></About>
         <ContactForm></ContactForm>
+        <Footer></Footer>
       </ParallaxProvider>
     </div>
   );
