@@ -67,6 +67,6 @@
 
 @media screen and (max-width: 400px) {
   .formContainer {
-    margin-left: .8rem; /* Shift the form 1rem to the right */
+    margin-left: .8rem; 
   }
 }
