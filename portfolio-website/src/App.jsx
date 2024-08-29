@@ -1,8 +1,8 @@
 import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
-import Skills from './components/skills';
-import Projects from './components/projects';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Certificates from './components/Certificates';
 import ContactForm from './components/ContactForm';
