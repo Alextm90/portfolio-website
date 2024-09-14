@@ -13,6 +13,7 @@
   cursor: pointer;
   height: 4rem;
   margin: 0.6rem;
+  overflow: hidden;
 }
 
 .popup {
@@ -23,6 +24,7 @@
   height: auto;
   height: 27rem;
   cursor: pointer;
+  overflow: auto;
 }
 
 .closeBtn {
