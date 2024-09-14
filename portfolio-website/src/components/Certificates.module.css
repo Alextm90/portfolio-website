@@ -1,8 +1,9 @@
 .certImg {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 15rem;
-  height: 10rem;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
 }
 
 .certBtn {
@@ -17,7 +18,9 @@
 .popup {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 40rem;
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
   height: 27rem;
   cursor: pointer;
 }
@@ -61,7 +64,7 @@
     width: 30rem;
     height: 20rem;
   }
-    .closeBtn {
+  .closeBtn {
     bottom: 18.35rem;
   }
 }
@@ -85,7 +88,7 @@
     width: 20rem;
     height: 14rem;
   }
-    .closeBtn {
+  .closeBtn {
     bottom: 12.35rem;
   }
 
@@ -102,7 +105,7 @@
 
 @media only screen and (max-width: 380px) {
   .closeBtn {
-   left: 18.1rem;
-   bottom: 14.2rem;
+    left: 18.1rem;
+    bottom: 14.2rem;
   }
 }
