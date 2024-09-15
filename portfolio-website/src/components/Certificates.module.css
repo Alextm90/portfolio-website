@@ -85,6 +85,7 @@
     width: 20rem;
     height: 14rem;
   }
+
   .closeBtn {
     bottom: 12.35rem;
   }
@@ -99,7 +100,7 @@
     bottom: 12.35rem;
   }
   .certBtn {
-    height: 10.1rem;
+    height: 7rem;
   }
 }
 
@@ -110,7 +111,7 @@
   }
 
   .certBtn {
-    height: 10.1rem;
+    height: 7rem;
   }
 
 }
