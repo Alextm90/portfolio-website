@@ -43,31 +43,19 @@ const Certificates = () => {
               maxWidth: '90vw',
               maxHeight: '85vh',
               overflowY: 'auto',
-              padding: '0',
+              padding: '1rem',
             }}
             className={styles.gh}
           >
-            <button
-              onClick={() => close()}
-              style={{
-                position: 'absolute',
-                top: '.5rem',
-                right: '5rem',
-                background: 'rgba(255, 255, 255, 0.7)',
-                border: 'none',
-                cursor: 'pointer',
-                padding: '5px',
-              }}
-              className={styles.closeBtn}
-            >
-              <CloseIcon />
-            </button>
             <img
               className={styles.popup}
               src={cert}
               alt="Certificate Enlarged"
               style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
             />
+            <button onClick={() => close()} className={styles.closeBtn}>
+              <CloseIcon />
+            </button>
           </div>
         )}
       </Popup>
