@@ -51,7 +51,6 @@ const Certificates = () => {
               className={styles.popup}
               src={cert}
               alt="Certificate Enlarged"
-              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
             />
             <button onClick={() => close()} className={styles.closeBtn}>
               <CloseIcon />
