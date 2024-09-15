@@ -20,8 +20,6 @@
   width: 40rem;
   height: 27rem;
   cursor: pointer;
-  max-height: 90vh;
-  overflow-y: auto; 
 }
 
 .closeBtn {
@@ -60,8 +58,9 @@
   .popup {
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30rem;
-    height: 20rem;
+    width: 80vw;
+    max-height: 70vh;
+    overflow-y: auto;
   }
   .closeBtn {
     bottom: 18.35rem;
@@ -84,8 +83,9 @@
   .popup {
     background-size: cover;
     background-repeat: no-repeat;
-    width: 20rem;
-    height: 14rem;
+    width: 80vw;
+    max-height: 70vh; 
+    overflow-y: auto;
   }
 
   .closeBtn {
@@ -113,6 +113,12 @@
     margin-bottom: 3rem;
   }
 
+  .popup {
+    width: 75vw; 
+    max-height: 65vh; 
+    overflow-y: auto;
+  }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -131,5 +137,11 @@
 
   #certContainerTwo > button {
     margin-bottom: 3rem;
+  }
+
+  .popup {
+    width: 70vw;
+    max-height: 60vh; 
+    overflow-y: auto; 
   }
 }
