@@ -22,20 +22,52 @@ const Certificates = () => {
         key={cert}
         trigger={
           <button className={styles.certBtn}>
-            <img className={styles.certImg} src={cert}></img>
+            <img className={styles.certImg} src={cert} alt="Certificate" />
           </button>
         }
         modal
         nested
       >
         {(close) => (
-          <div>
-            <button className={styles.certBtn}>
-              <img className={styles.popup} src={cert}></img>
-            </button>
-            <button onClick={() => close()} className={styles.closeBtn}>
+          <div
+            style={{
+              position: 'fixed',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '90vw',
+              maxWidth: '90vw',
+              maxHeight: '85vh',
+              overflowY: 'auto',
+              padding: '0',
+            }}
+            className={styles.gh}
+          >
+            <button
+              onClick={() => close()}
+              style={{
+                position: 'absolute',
+                top: '.5rem',
+                right: '5rem',
+                background: 'rgba(255, 255, 255, 0.7)',
+                border: 'none',
+                cursor: 'pointer',
+                padding: '5px',
+              }}
+              className={styles.closeBtn}
+            >
               <CloseIcon />
             </button>
+            <img
+              className={styles.popup}
+              src={cert}
+              alt="Certificate Enlarged"
+              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+            />
           </div>
         )}
       </Popup>
