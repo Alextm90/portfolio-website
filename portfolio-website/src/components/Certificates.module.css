@@ -83,7 +83,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 20rem;
-    height: 14rem;
+    height: 20rem; /* 14rem*/
   }
 
   .closeBtn {
@@ -110,6 +110,10 @@
   #certContainerTwo > button {
     margin-bottom: 3rem;
   }
+
+  .popup {
+    height: 20rem;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -128,5 +132,9 @@
 
   #certContainerTwo > button {
     margin-bottom: 3rem;
+  }
+
+  .popup {
+    height: 20rem;
   }
 }
