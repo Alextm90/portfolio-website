@@ -10,16 +10,24 @@
   padding: 0;
   text-decoration: none;
   cursor: pointer;
-  height: 4rem; /* originally 4rem*/
+  height: 4rem;
   margin: 0.6rem;
 }
 
 .popup {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 40rem;
-  height: 27rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  max-width: 90vw; 
+  height: auto; 
+  max-height: 90vh; 
+  overflow: hidden; 
+  margin: auto; 
 }
 
 .closeBtn {
@@ -56,11 +64,9 @@
 
 @media only screen and (max-width: 700px) and (min-width: 530px) {
   .popup {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 80vw;
-    max-height: 70vh;
-    overflow-y: auto;
+    max-width: 80vw; 
+    max-height: 80vh;
+    overflow: hidden; 
   }
   .closeBtn {
     bottom: 18.35rem;
@@ -81,11 +87,9 @@
   }
 
   .popup {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 80vw;
-    max-height: 70vh; 
-    overflow-y: auto;
+    max-width: 80vw; 
+    max-height: 80vh; 
+    overflow: hidden; 
   }
 
   .closeBtn {
@@ -102,7 +106,7 @@
     bottom: 12.35rem;
   }
   .certBtn {
-    height: 10.1rem; /* 10.1 original*/
+    height: 10.1rem;
   }
 
   #certContainerOne > button {
@@ -114,9 +118,9 @@
   }
 
   .popup {
-    width: 75vw; 
-    max-height: 65vh; 
-    overflow-y: auto;
+    max-width: 75vw; 
+    max-height: 75vh; 
+    overflow: hidden; 
   }
 
 }
@@ -128,7 +132,7 @@
   }
 
   .certBtn {
-    height: 10.1rem; /* 10.1 original*/
+    height: 10.1rem;
   }
 
   #certContainerOne > button {
@@ -140,8 +144,8 @@
   }
 
   .popup {
-    width: 70vw;
-    max-height: 60vh; 
-    overflow-y: auto; 
+    max-width: 70vw; 
+    max-height: 70vh; 
+    overflow: hidden; 
   }
 }
