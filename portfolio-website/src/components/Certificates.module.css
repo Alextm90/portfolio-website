@@ -20,6 +20,8 @@
   width: 40rem;
   height: 27rem;
   cursor: pointer;
+  max-height: 90vh;
+  overflow-y: auto; 
 }
 
 .closeBtn {
@@ -120,7 +122,7 @@
   }
 
   .certBtn {
-    height: 10.1rem; /* 10.1 oroginal*/
+    height: 10.1rem; /* 10.1 original*/
   }
 
   #certContainerOne > button {
