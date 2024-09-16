@@ -100,7 +100,7 @@
 @media only screen and (max-width: 475px) {
   .closeBtn {
     bottom: 14rem;
-    left: 5rem;
+    left: 8.5rem; /* adjust this for phone view higher number = more to the right*/
   }
   .certBtn {
     height: 10.1rem;
