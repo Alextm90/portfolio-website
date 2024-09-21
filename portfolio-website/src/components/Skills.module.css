@@ -21,5 +21,6 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 4.3rem;
 }
 
