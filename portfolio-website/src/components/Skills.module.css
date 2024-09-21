@@ -12,6 +12,7 @@ h4 {
   display: flex;
   justify-content: center;
   margin-top: 0.9rem;
+  margin-bottom: .5rem;
   font-weight: 200;
 }
 
