@@ -12,7 +12,6 @@ h4 {
   display: flex;
   justify-content: center;
   margin-top: 0.9rem;
-  margin-bottom: .5rem;
   font-weight: 200;
 }
 
@@ -22,6 +21,5 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 4.3rem;
 }
 
