@@ -24,7 +24,7 @@ const Skills = () => {
         <div className={styles.icon}>
           <MongodbOriginal size="68" />
           <div className={styles.shadow}></div>
-          <h4>mongoDB</h4>
+          <h4>MongoDB</h4>
         </div>
         <div className={styles.icon}>
           <ExpressOriginal size="68" fill="gray" />
